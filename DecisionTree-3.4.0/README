@@ -1,0 +1,13 @@
+
+The DecisionTree module is a Python implementation for
+constructing a decision tree from multidimensional training
+data and for using the decision tree thus constructed for
+classifying new data.
+
+It is highly recommended that you read the README in the 
+'Examples' directory if you wish to become familiar with
+this module.
+
+If there are any questions about this module, contact the
+author at 'kak@purdue.edu' with the string DecisionTree in
+the subject line to get past his spam filter.

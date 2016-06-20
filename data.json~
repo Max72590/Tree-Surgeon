@@ -1,0 +1,65 @@
+	{
+	 "name": "PetalLength",
+	"entropy": "1.58379553925 ",
+	 "rule": "null",
+	"id": "0",
+	"confMat": "{0: ['Iris-setosa', [34, 0, 0]], 1: ['Iris-versicolor', [0, 33, 2]], 2: ['Iris-virginica', [0, 1, 35]]}",
+	"stats": "[97.15, 94.6, 97.23]",
+	"children": [
+		{  "name": "['Name=Iris-setosa => 1.000', 'Name=Iris-versicolor => 0.000', 'Name=Iris-virginica => 0.000']",
+		"entropy": "0.0 ",
+		"rule": "PetalLength<2.0 ",
+		"id": "1"
+		},
+		{
+		 "name": "PetalWidth",
+		"entropy": "0.998711751465 ",
+		 "rule": "PetalLength>2.0 ",
+		"id": "2",
+		"confMat": "{0: ['Iris-setosa', [0, 0, 0]], 1: ['Iris-versicolor', [0, 33, 2]], 2: ['Iris-virginica', [0, 1, 35]]}",
+		"stats": "[95.78, 94.6, 97.23]",
+		"children": [
+			{
+			 "name": "PetalLength",
+			"entropy": "0.49418293485 ",
+			 "rule": "PetalWidth<1.7 ",
+			"id": "3",
+			"confMat": "{0: ['Iris-setosa', [0, 0, 0]], 1: ['Iris-versicolor', [0, 33, 2]], 2: ['Iris-virginica', [0, 0, 2]]}",
+			"stats": "[94.6, 100.0, 94.29]",
+			"children": [
+				{  "name": "['Name=Iris-setosa => 0.000', 'Name=Iris-versicolor => 0.956', 'Name=Iris-virginica => 0.044']",
+				"entropy": "0.25968638464 ",
+				"rule": "PetalLength<5.2 ",
+				"id": "4"
+				},
+				{  "name": "['Name=Iris-setosa => 0.000', 'Name=Iris-versicolor => 0.000', 'Name=Iris-virginica => 1.000']",
+				"entropy": "0.0 ",
+				"rule": "PetalLength>5.2 ",
+				"id": "5"
+				}
+			]
+			},
+			{
+			 "name": "PetalLength",
+			"entropy": "0.191433254814 ",
+			 "rule": "PetalWidth>1.7 ",
+			"id": "6",
+			"confMat": "{0: ['Iris-setosa', [0, 0, 0]], 1: ['Iris-versicolor', [0, 0, 0]], 2: ['Iris-virginica', [0, 1, 33]]}",
+			"stats": "[97.06, 100.0, 97.06]",
+			"children": [
+				{  "name": "['Name=Iris-setosa => 0.000', 'Name=Iris-versicolor => 1.000', 'Name=Iris-virginica => 0.000']",
+				"entropy": "0.0 ",
+				"rule": "PetalLength<4.4 ",
+				"id": "7"
+				},
+				{  "name": "['Name=Iris-setosa => 0.000', 'Name=Iris-versicolor => 0.017', 'Name=Iris-virginica => 0.983']",
+				"entropy": "0.122205659498 ",
+				"rule": "PetalLength>4.4 ",
+				"id": "8"
+				}
+			]
+			}
+		]
+		}
+	]
+	}
